@@ -16,7 +16,7 @@ html, body {
 
 /* header */
 header {
-    background-image: url('images/banniere2.png');
+    background-image: url('../images/banniere/banniere2.png');
     margin-top:0;
 }
 
