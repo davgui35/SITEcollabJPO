@@ -36,12 +36,17 @@ figcaption{
     margin-top: 20px;
 }
 
+#menu a{
+    text-decoration: none;
+    color : black;
+}
+
 /* lien-techno */
 #menu .lien-techno a{
     color: black;
     margin: 0px 20px;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 1.68em;
 }
 
 #menu .lien-techno a:hover{

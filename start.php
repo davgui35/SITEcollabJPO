@@ -4,6 +4,7 @@
 define('DIR_ASSETS', 'assets/');
 define('DIR_INCLUDE', 'includes/');
 define('DIR_CSS', 'css/');
+define('DIR_ITEMS', 'items/');
 
 // Récupération des données
 //include(DIR_DATA . 'data.php');
