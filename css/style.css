@@ -1,0 +1,185 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Cuprum&display=swap');
+@font-face {
+    font-family: 'icon';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ElegantIcons'), url('fonts/ElegantIcons.woff') format('woff');
+    }
+    
+/* body */
+html, body {
+   box-sizing:border-box;
+   background-color: #e8E8E8;
+   font-family: 'Cuprum', sans-serif;
+}
+
+/* header */
+header {
+    background-image: url('images/banniere2.png');
+    margin-top:0;
+}
+
+/* nav-bar */
+#menu{
+    padding:0;
+}
+
+figcaption{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* logo */
+#menu .logo{
+    margin-top: 20px;
+}
+
+/* lien-techno */
+#menu .lien-techno a{
+    color: black;
+    margin: 0px 20px;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+#menu .lien-techno a:hover{
+    color: #fff;
+    background-color: #8fbaf7;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+
+#menu .lien-techno .active a{
+    color: #fff;
+    background-color: #8fbaf7;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+/* cartes */
+
+
+#menu h5{
+    font-weight: bold;
+}
+
+#menu .btn{
+    background-color: #8fbaf7;
+}
+
+#menu p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#menu .card img{
+    width: 100px;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+
+
+/* contour */
+#menu .html{
+    border: 2px solid #FFA124;
+    margin-top: 80px;
+}
+
+#menu .css{
+    border: 2px solid #8fbaf7;
+    margin-top: 80px;
+}
+
+#menu .wordpress{
+    border: 2px solid #A9A9A9;
+    margin-top: 80px;
+}
+
+#menu .ps{
+    border: 2px solid #55A2FF;
+    margin-top: 80px;
+}
+
+#menu .ia{
+    border: 2px solid #FFA124;
+    margin-top: 80px;
+}
+
+#menu .php{
+    border: 2px solid #B762B5;
+    margin-top: 80px;
+}
+
+/* cartes par indivudualite */
+
+
+#menu .ps .card-body {
+    margin-bottom: 10px;
+}
+
+#menu .ps .card-text {
+    margin-bottom: 37px;
+}
+
+#menu .wordpress .card-text{
+    margin-bottom: 40px;
+}
+
+#menu .ia .card-text {
+    margin-bottom: 65px;
+}
+
+#menu .ia .card-body {
+    margin-bottom: 5px;
+}
+
+#menu .php .card-text{
+    margin-bottom: 65px;
+}
+
+/* a propos */
+
+#apropos{
+    padding:0px;
+}
+
+/* Lea */
+.apropos_lea{
+    background-color: #fff;
+    margin-top: 40px;
+    padding: 20px 0px 20px 0px;
+    border-radius: 5px;
+    margin-right: 55px;
+    border: 2px solid #A9A9A9;
+}
+
+.apropos_lea h5{
+    font-weight: bold;
+}
+
+/* david */
+.apropos_david{
+    background-color: #fff;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 55px;
+    border: 2px solid #A9A9A9;
+}
+
+.apropos_david h5{
+    font-weight: bold;
+}
+
+/* footer */
+#footer{
+    margin-top: 45px;
+}
+
+/* images footer */
+
+.img_footer{
+    margin-right: 50px;
+}
