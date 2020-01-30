@@ -36,22 +36,22 @@ function start_page($title)
                             <a class="nav-link" href="index.php">Accueil</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="pageHTML.php">Html</a>
+                            <a class="nav-link" href="pageHTML.php">HTML</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pageCSS.php">Css</a>
+                            <a class="nav-link" href="pageCSS.php">CSS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pageWP.php">WordPress</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pagePHP.php">Php</a>
+                            <a class="nav-link" href="pagePHP.php">PHP</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pagePS.php">PS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pageAI.php">Ai</a>
+                            <a class="nav-link" href="pageAI.php">AI</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pageAPP.php">A propos</a>

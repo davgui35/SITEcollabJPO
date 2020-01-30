@@ -46,7 +46,7 @@ figcaption{
     color: black;
     margin: 0px 20px;
     font-weight: bold;
-    font-size: 1.68em;
+    font-size: 1.633em;
 }
 
 #menu .lien-techno a:hover{
@@ -73,6 +73,7 @@ figcaption{
 
 #menu .btn{
     background-color: #8fbaf7;
+    font-weight: 600;
 }
 
 #menu p{
