@@ -23,22 +23,22 @@
                   <a class="nav-link" href="#">Accueil</a>
                 </li>
                   <li class="nav-item ">
-                    <a class="nav-link" href="#">Html</a>
+                    <a class="nav-link" href="items/pageHTML.php">Html</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Css</a>
+                    <a class="nav-link" href="items/pageCSS.php">Css</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Php</a>
+                      <a class="nav-link" href="items/pageWP.php">Php</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">PS</a>
+                      <a class="nav-link" href="items/pagePS.php">PS</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Ai</a>
+                      <a class="nav-link" href="items/pageAI.php">Ai</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">A propos</a>
+                      <a class="nav-link" href="items/pagePHP.php">Php</a>
                   </li>
                 </ul>
           </div> 
