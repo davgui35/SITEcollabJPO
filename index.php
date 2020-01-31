@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>David et Léa</title>
+    <title>Accueil</title>
 </head>
 <body>
   <!-- menu navigation -->
