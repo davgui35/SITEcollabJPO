@@ -2,10 +2,6 @@
 include('start.php');
 ?>
 <!DOCTYPE html>
-<<<<<<< HEAD
-<?= start_page('Acceuil'); ?>
-
-=======
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -54,7 +50,6 @@ include('start.php');
   </div>
 </header>
 <main>
->>>>>>> e2ec0e18e7c64be0ab19b42287a1d74155f95574
   <!-- cartes du haut -->
   <div class="container" id="menu">
     <div class="row">
