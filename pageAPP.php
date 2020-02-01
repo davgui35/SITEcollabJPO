@@ -1,9 +1,9 @@
 <?php
-include('start.php');
+include('includes/bootstrap.php');
 ?>
 <!DOCTYPE html>
 <!-- header -->
-<?= start_page('A propos'); ?>
+<?= include(DIR_TEMPLATES . 'header.php'); ?>
 
 <!-- Explication de pourquoi ce site, objectifs, bilan... -> petit article   -->
 
@@ -12,6 +12,6 @@ include('start.php');
 
 
 <!-- A propos -->
-<?= a_propos(); ?>
+<?= include(DIR_TEMPLATES . 'propos.php'); ?>
 <!-- footer -->
-<?= end_page(); ?>
+<?= include(DIR_TEMPLATES . 'footer.php'); ?>

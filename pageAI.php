@@ -1,9 +1,9 @@
 <?php
-include('start.php');
+include('includes/bootstrap.php');
 ?>
 <!DOCTYPE html>
 <!-- header -->
-<?= start_page('Illustrator'); ?>
+<?= include(DIR_TEMPLATES . 'header.php'); ?>
 
 <!-- footer -->
-<?= end_page(); ?>
+<?= include(DIR_TEMPLATES . 'footer.php'); ?>

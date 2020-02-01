@@ -1,11 +1,11 @@
 <?php
-include('start.php');
+include('includes/bootstrap.php');
 ?>
 <!DOCTYPE html>
 <!-- header -->
-<?= start_page('CSS'); ?>
+<?= include(DIR_TEMPLATES . 'header.php'); ?>
 
 <!-- Liste des tutos css ajouter par les utilisateurs (apercu) + lien vers une page avec l'article complet + commentaires des utilisateurs   -->
 
 <!-- footer -->
-<?= end_page(); ?>
+<?= include(DIR_TEMPLATES . 'footer.php'); ?>
