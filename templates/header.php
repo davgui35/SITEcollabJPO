@@ -39,7 +39,7 @@
                             <a class="nav-link" href="pagePS.php">PS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pageAI.php">AI</a>
+                            <a class="nav-link" href="pageIA.php">AI</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pageAPP.php">A propos</a>

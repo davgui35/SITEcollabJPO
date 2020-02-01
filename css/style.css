@@ -88,32 +88,32 @@ figcaption{
 
 
 /* contour */
-#menu .html{
+#menu .HTML{
     border: 2px solid #FFA124;
     margin-top: 80px;
 }
 
-#menu .css{
+#menu .CSS{
     border: 2px solid #8fbaf7;
     margin-top: 80px;
 }
 
-#menu .wordpress{
+#menu .WP{
     border: 2px solid #A9A9A9;
     margin-top: 80px;
 }
 
-#menu .ps{
+#menu .PS{
     border: 2px solid #55A2FF;
     margin-top: 80px;
 }
 
-#menu .ia{
+#menu .IA{
     border: 2px solid #FFA124;
     margin-top: 80px;
 }
 
-#menu .php{
+#menu .PHP{
     border: 2px solid #B762B5;
     margin-top: 80px;
 }
@@ -121,29 +121,34 @@ figcaption{
 /* cartes par indivudualite */
 
 
-#menu .ps .card-body {
+#menu .PS .card-body {
     margin-bottom: 10px;
 }
 
-#menu .ps .card-text {
+#menu .PS .card-text {
     margin-bottom: 37px;
 }
 
-#menu .wordpress .card-text{
+#menu .WP .card-text {
     margin-bottom: 40px;
 }
 
-#menu .ia .card-text {
+#menu .IA .card-text {
     margin-bottom: 65px;
 }
 
-#menu .ia .card-body {
+#menu .IA .card-body {
     margin-bottom: 5px;
 }
 
-#menu .php .card-text{
+#menu .IA .card-text{
     margin-bottom: 65px;
 }
+
+#menu .PHP .card-text{
+    margin-bottom: 65px;
+}
+
 
 /* a propos */
 
