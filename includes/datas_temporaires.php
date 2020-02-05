@@ -34,4 +34,25 @@ $cartes = array(
     'description' => 'Un langage de programmation libre, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP.',
   ),
 )
+
+$carouselHTML = array(
+  array(
+    'auteur' => 'Auteur',
+    'date' => 'date',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
+  ),
+  array(
+    'auteur' => 'Auteur',
+    'date' => 'Date',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
+  ),
+  array(
+    'auteur' => 'Auteur',
+    'date' => 'Date',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
+  ),
+)
+
+
+
 ?>
