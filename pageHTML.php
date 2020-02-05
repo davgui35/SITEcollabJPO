@@ -32,7 +32,14 @@ include('includes/bootstrap.php');
   <div class="col mb-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title"><?= $carte['title'] . ' -- ' . $carte['date']; ?></h5>
+        <div class="d-flex">
+            <div>
+              <img src="<?=$carte['avatar'] ?>" alt="avatar" width="50px" style="margin-right: 20px;">
+            </div>
+            <div>
+            <h5 class="card-title"><?= $carte['title'] . ' -- ' . $carte['date'] .'<br />' . $carte['auteur']; ?></h5>
+            </div>
+        </div>
         <p class="card-text"><?= $carte['description']; ?></p>
       </div>
     </div>
