@@ -54,5 +54,28 @@ $carouselHTML = array(
 );
 
 
+$cardsHTML = array(
+  array(
+    'title' => 'Auteur',
+    'date' => 'date',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
+  ),
+  array(
+    'title' => 'Auteur',
+    'date' => 'Date',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
+  ),
+  array(
+    'title' => 'Auteur',
+    'date' => 'Date',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
+  ),
+  array(
+    'title' => 'Auteur',
+    'date' => 'Date',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
+  )
+);
+
 
 ?>
