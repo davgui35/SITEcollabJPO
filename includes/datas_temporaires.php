@@ -56,6 +56,7 @@ $carouselHTML = array(
 
 $cardsHTML = array(
   array(
+    'id' => '1',
     'title' => 'Le titre',
     'auteur' => 'L\'auteur',
     'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
@@ -63,22 +64,25 @@ $cardsHTML = array(
     'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa...',
   ),
   array(
-    'title' => 'Le titre',
-    'auteur' => 'L\'auteur',
+    'id' => '2',
+    'title' => 'Le titre2',
+    'auteur' => 'L\'auteur2',
     'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
     'date' => 'Date',
     'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa...',
   ),
   array(
-    'title' => 'Le titre',
-    'auteur' => 'L\'auteur',
+    'id' => '3',
+    'title' => 'Le titre3',
+    'auteur' => 'L\'auteur3',
     'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
     'date' => 'Date',
     'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa...',
   ),
   array(
-    'title' => 'Le titre',
-    'auteur' => 'L\'auteur',
+    'id' => '4',
+    'title' => 'Le titre4',
+    'auteur' => 'L\'auteur4',
     'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
     'date' => 'Date',
     'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa...',

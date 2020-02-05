@@ -7,7 +7,7 @@ include('includes/bootstrap.php');
 
 <!-- Liste des tutos html ajouter par les utilisateurs (apercu) + lien vers une page avec l'article complet + commentaires des utilisateurs   -->
 <div class="container">
-<h2>Les meilleurs articles</h2>
+<h2 style="text-align: center;">LES MEILLEURS ARTICLES</h2>
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="10000"> 
@@ -31,6 +31,7 @@ include('includes/bootstrap.php');
 <?php foreach ($cardsHTML as $carte) : ?>
   <div class="col mb-4">
     <div class="card">
+    <a href="voir_article.php?id=<?= $carte['id'] ?>">
       <div class="card-body">
         <div class="d-flex">
             <div>
@@ -42,6 +43,7 @@ include('includes/bootstrap.php');
         </div>
         <p class="card-text"><?= $carte['description']; ?></p>
       </div>
+    </a>
     </div>
   </div>
 <?php endforeach; ?>

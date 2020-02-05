@@ -194,3 +194,9 @@ figcaption{
 .img_footer{
     margin-right: 50px;
 }
+
+
+a, a:hover{
+    color: black;
+    text-decoration: none;
+}
