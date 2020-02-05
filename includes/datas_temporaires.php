@@ -35,28 +35,50 @@ $cartes = array(
   )
 );
 
-$carouselHTML = array(
+$carousel = array(
   array(
     'auteur' => 'Auteur',
     'date' => 'date',
+    'type' => 'HTML',
     'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
   ),
   array(
     'auteur' => 'Auteur',
     'date' => 'Date',
+    'type' => 'HTML',
     'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
   ),
   array(
     'auteur' => 'Auteur',
     'date' => 'Date',
+    'type' => 'HTML',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
+  ),
+  array(
+    'auteur' => 'AuteurCSS',
+    'date' => 'dateCSS',
+    'type' => 'CSS',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
+  ),
+  array(
+    'auteur' => 'AuteurCSS',
+    'date' => 'DateCSS',
+    'type' => 'CSS',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
+  ),
+  array(
+    'auteur' => 'AuteurCSS',
+    'date' => 'DateCSS',
+    'type' => 'CSS',
     'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa?',
   )
 );
 
 
-$cardsHTML = array(
+$cards = array(
   array(
     'id' => '1',
+    'type' => 'HTML',
     'title' => 'Le titre',
     'auteur' => 'L\'auteur',
     'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
@@ -65,6 +87,7 @@ $cardsHTML = array(
   ),
   array(
     'id' => '2',
+    'type' => 'HTML',
     'title' => 'Le titre2',
     'auteur' => 'L\'auteur2',
     'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
@@ -73,6 +96,7 @@ $cardsHTML = array(
   ),
   array(
     'id' => '3',
+    'type' => 'HTML',
     'title' => 'Le titre3',
     'auteur' => 'L\'auteur3',
     'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
@@ -81,13 +105,49 @@ $cardsHTML = array(
   ),
   array(
     'id' => '4',
+    'type' => 'HTML',
     'title' => 'Le titre4',
+    'auteur' => 'L\'auteur4',
+    'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
+    'date' => 'Date',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa...',
+  ),
+  array(
+    'id' => '5',
+    'type' => 'CSS',
+    'title' => 'Le titrecss',
+    'auteur' => 'L\'auteurcss',
+    'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
+    'date' => 'Date',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa...',
+  ),
+  array(
+    'id' => '6',
+    'type' => 'CSS',
+    'title' => 'Le titrecss2',
+    'auteur' => 'L\'auteur2',
+    'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
+    'date' => 'Date',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa...',
+  ),
+  array(
+    'id' => '7',
+    'type' => 'CSS',
+    'title' => 'Le titreccss3',
+    'auteur' => 'L\'auteur3',
+    'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
+    'date' => 'Date',
+    'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa...',
+  ),
+  array(
+    'id' => '8',
+    'type' => 'CSS',
+    'title' => 'Le titrecss4',
     'auteur' => 'L\'auteur4',
     'avatar' => 'https://www.renault.fr/etc/designs/renault_v2/19.10.2.RENAULT-1882/common-assets/img/avatar/avatar.png',
     'date' => 'Date',
     'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam voluptatibus dolor dolorum. Corrupti dicta illo omnis cumque atque totam sed iusto eos quod sapiente enim quisquam, exercitationem molestiae ipsa...',
   )
 );
-
 
 ?>

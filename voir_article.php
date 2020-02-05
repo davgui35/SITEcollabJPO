@@ -16,7 +16,7 @@ if (empty($_GET['id']) || !$article = getArticle($_GET['id'])) {
 
 <div class="container" style="background-color: #657F9C;">
     <div  style="color: white;">
-        <h3>HTML / ARTICLE</h3>
+        <h3><?=$article['type']; ?> / ARTICLE</h3>
         <h2><?= $article['title']; ?></h2>
         <div class="d-flex">
             <img src="<?= $article['avatar']; ?>" alt="avatar" width="100px">
