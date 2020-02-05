@@ -10,22 +10,19 @@ include('includes/bootstrap.php');
 <h2 style="text-align: center;">LES MEILLEURS ARTICLES</h2>
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="10000"> 
-      <a href="#"><h3><?= 'Par ' . $carouselHTML[0]['auteur'] . ' publier le ' .  $carouselHTML[0]['date']; ?></h3>
-      <p><?= $carouselHTML[0]['description']; ?></p></a>
-    </div>
-    <div class="carousel-item" data-interval="2000">   
-    <a href="#"><h3><?= 'Par ' . $carouselHTML[1]['auteur'] . ' publier le ' .  $carouselHTML[1]['date']; ?></h3>
-      <p><?= $carouselHTML[1]['description']; ?></p></a>
-    </div>
-    <div class="carousel-item">
-    <a href="#"><h3><?= 'Par ' . $carouselHTML[2]['auteur'] . ' publier le ' .  $carouselHTML[2]['date']; ?></h3>
-      <p><?= $carouselHTML[2]['description']; ?></p></a>
-    </div>
-    </div>
+  <?php $counter = 1; 
+      foreach($cardsHTML as $card): ?>
+      <div class="carousel-item<?php if($counter <= 1){echo " active"; } ?>" data-interval="10000"> 
+        <a href="#"><h3><?= 'Par ' . $card['auteur'] . ' publier le ' .  $card['date']; ?></h3>
+        <p><?= $card['description']; ?></p></a>
+      </div>
+    <?php $counter++;
+    endforeach; ?>
   </div>
 </div>
-</div>
+
+
+
 <div class="container">
 <div class="row row-cols-1 row-cols-md-2">
 <?php foreach ($cardsHTML as $carte) : ?>
