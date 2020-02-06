@@ -14,7 +14,7 @@
                 <img src="images/logos/DessinPerso.png" class="align-self-center mr-3"  width="150px" height="150px" alt="logo">
                 <div class="media-body">
                     <h5 class="mt-0">A propos de David</h5>
-                    <p>Après un parcours dans différents domaines,je consacre mon temps à la recherche de la culture web, de la vieille numérique, et à l\'apprentissage dans le développement.Je souhaite échanger avec vous, les connaissances que je possède, mais nous allons grâce à notre site, progresser ensemble.</p>
+                    <p>Après un parcours dans différents domaines, je consacre mon temps à la recherche de la culture web, de la vieille numérique, et à l'apprentissage dans le développement.Je souhaite échanger avec vous, les connaissances que je possède, mais nous allons grâce à notre site, progresser ensemble.</p>
                     <p class="mb-0">Ce site est un partage de connaissances et un échange humain sur un univers passionnant en éternelle évolution.</p>
                 </div>
             </div>

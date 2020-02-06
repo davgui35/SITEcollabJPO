@@ -31,45 +31,70 @@ function getArticle($id)
 }
 
 
-function creatCards($carte)
+function creatCards($cards, $type)
 {
-	$html = 
-	
-		'<div class="col mb-4">
-		  <div class="card">
-		  <a href="voir_article.php?id=' . $carte['id'] . '">
-			<div class="card-body">
-			  <div class="d-flex">
-				  <div>
-					<img src="'. $carte['avatar'] . '" alt="avatar" width="50px" style="margin-right: 20px;">
-				  </div>
-				  <div>
-				  <h5 class="card-title">' . $carte['title'] . ' -- ' . $carte['date'] .'<br />' . $carte['auteur'] . '</h5>
-				  </div>
-			  </div>
-			  <p class="card-text">' . $carte['description'] . '</p>
-			</div>
-		  </a>
-		  </div>
-		</div>' ;
-		return $html;
+  $html = '';
+  $html .='
+  <div class="container">
+  <div class="row row-cols-1 row-cols-md-2">';
+    foreach ($cards as $carte) {
+      if($carte['type'] == $type){
+        $html .= 
+          '<div class="col mb-4">
+            <div class="card">
+            <a href="voir_article.php?id=' . $carte['id'] . '">
+            <div class="card-body">
+              <div class="d-flex">
+                <div>
+                <img src="'. $carte['avatar'] . '" alt="avatar" width="50px" style="margin-right: 20px;">
+                </div>
+                <div>
+                <h5 class="card-title">' . $carte['title'] . ' -- ' . $carte['date'] .'<br />' . $carte['auteur'] . '</h5>
+                </div>
+              </div>
+              <p class="card-text">' . $carte['description'] . '</p>
+            </div>
+            </a>
+            </div>
+          </div>' ;
+      }
+    }
+    $html .='
+    </div>
+  </div>';
+  
+  return $html;
 
 }
 
 
 
-function createCarousel($card, $counter)
+function createCarousel($carousel, $type)
 {
-  if($counter <= 1){
-    $active = ' active'; 
-  } else {
-    $active = ''; 
-  }
-  $html = '
-  <div class="carousel-item' . $active . '" data-interval="10000"> 
-    <a href="#"><h3>Par ' . $card['auteur'] . ' publier le ' .  $card['date'] .'</h3>
-    <p>' . $card['description'] . '</p></a>
-  </div>';
+  $html = '';
+  $counter = 1; 
+  $html .= '
+  <div class="container">
+    <h2 style="text-align: center;">LES MEILLEURS ARTICLES</h2>
+      <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">';
+            foreach($carousel as $slide){
+              if($counter <= 1){
+                $active = ' active'; 
+              } else {
+                $active = ''; 
+              }
+              if($slide['type'] == $type){
+              $html .= '
+              <div class="carousel-item' . $active . '" data-interval="10000"> 
+                <a href="#"><h3>Par ' . $slide['auteur'] . ' publier le ' .  $slide['date'] .'</h3>
+                <p>' . $slide['description'] . '</p></a>
+              </div>';
+              $counter++;
+              }
+            }
+          $html .= '</div>
+    </div>';
   return $html;
 }
 
