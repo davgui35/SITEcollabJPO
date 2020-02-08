@@ -74,8 +74,8 @@ function createCarousel($carousel, $type)
   $html = '';
   $counter = 1; 
   $html .= '
-  <div class="container">
-    <h2 style="text-align: center;">LES MEILLEURS ARTICLES</h2>
+  <div class="container" style="text-align: center;">
+    <h2>LES MEILLEURS ARTICLES</h2>
       <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">';
             foreach($carousel as $slide){
