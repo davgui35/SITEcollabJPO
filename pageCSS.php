@@ -6,6 +6,9 @@ include('includes/bootstrap.php');
 <?= include(DIR_TEMPLATES . 'header.php'); ?>
 
 <!-- Liste des tutos css ajouter par les utilisateurs (apercu) + lien vers une page avec l'article complet + commentaires des utilisateurs   -->
+<?= createCarousel($carousel, 'CSS');?>
 
+<?= creatCards($cards, 'CSS'); ?>
 <!-- footer -->
 <?= include(DIR_TEMPLATES . 'footer.php'); ?>
+
