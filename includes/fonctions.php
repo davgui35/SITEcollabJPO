@@ -7,7 +7,17 @@ function debug($data)
     echo '</pre>';
 }
 
-
+function appelbdd(){
+try{
+    $bdd = new PDO ('mysql:host=localhost;dbname=homecodesign', 'root', '');
+  }
+catch (Exception $e)
+  {
+    die('Erreur : ' . $e ->getMessage());
+  }
+  return $bdd;
+  
+}
 /**
  * Cette fonction permet de récupérer un seul article
  * grâce à son identifiant
@@ -31,14 +41,13 @@ function getArticle($id)
 }
 
 
-function creatCards($cards, $type)
+function createCards($req)
 {
   $html = '';
   $html .='
   <div class="container">
   <div class="row row-cols-1 row-cols-md-2">';
-    foreach ($cards as $carte) {
-      if($carte['type'] == $type){
+    while($carte = $req->fetch()) { 
         $html .= 
           '<div class="col mb-4">
             <div class="card">
@@ -46,10 +55,10 @@ function creatCards($cards, $type)
             <div class="card-body">
               <div class="d-flex">
                 <div>
-                <img src="'. $carte['avatar'] . '" alt="avatar" width="50px" style="margin-right: 20px;">
+                '/*<img src="'. $carte['avatar'] . '" alt="avatar" width="50px" style="margin-right: 20px;">*/.'
                 </div>
                 <div>
-                <h5 class="card-title">' . $carte['title'] . ' -- ' . $carte['date'] .'<br />' . $carte['auteur'] . '</h5>
+                <h5 class="card-title">' . $carte['titre'] . ' -- ' . $carte['date'] .'<br /></h5>
                 </div>
               </div>
               <p class="card-text">' . $carte['description'] . '</p>
@@ -58,7 +67,7 @@ function creatCards($cards, $type)
             </div>
           </div>' ;
       }
-    }
+    
     $html .='
     </div>
   </div>';
@@ -69,7 +78,7 @@ function creatCards($cards, $type)
 
 
 
-function createCarousel($carousel, $type)
+function createCarousel($req)
 {
   $html = '';
   $counter = 1; 
@@ -78,20 +87,19 @@ function createCarousel($carousel, $type)
     <h2>LES MEILLEURS ARTICLES</h2>
       <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">';
-            foreach($carousel as $slide){
+            while($carte = $req->fetch()) { 
               if($counter <= 1){
                 $active = ' active'; 
               } else {
                 $active = ''; 
               }
-              if($slide['type'] == $type){
               $html .= '
               <div class="carousel-item' . $active . '" data-interval="10000"> 
-                <a href="#"><h3>Par ' . $slide['auteur'] . ' publier le ' .  $slide['date'] .'</h3>
-                <p>' . $slide['description'] . '</p></a>
+                <a href="#"><h3>Par ' . $carte['auteur'] . ' publier le ' .  $carte['date'] .'</h3>
+                <p>' . $carte['description'] . '</p></a>
               </div>';
               $counter++;
-              }
+
             }
           $html .= '</div>
     </div>';

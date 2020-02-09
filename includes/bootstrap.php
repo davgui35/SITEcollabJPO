@@ -22,3 +22,5 @@ define('NAME_APP', 'H0me C0design');
 // Récupération des fonctions diverses
 include(DIR_INCLUDE . 'fonctions.php');
 include(DIR_INCLUDE . 'datas_temporaires.php'); 
+
+include(DIR_INCLUDE . 'appelbdd.php'); 

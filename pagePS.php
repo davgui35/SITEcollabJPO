@@ -7,8 +7,14 @@ include('includes/bootstrap.php');
 
 <!-- Liste des tutos psd ajouter par les utilisateurs (apercu) + lien vers une page avec l'article complet + commentaires des utilisateurs   -->
 
-<?= createCarousel($carousel, 'PS');?>
-
-<?= creatCards($cards, 'PS'); ?>
+<?php 
+  $req = $bdd->query('SELECT * FROM articles WHERE type = \'PS\'');
+  echo createCarousel($req); 
+  $req->closeCursor(); 
+  
+  $req = $bdd->query('SELECT * FROM articles WHERE type = \'PS\'');
+  echo createCards($req); 
+  $req->closeCursor(); 
+?>
 <!-- footer -->
 <?= include(DIR_TEMPLATES . 'footer.php'); ?>

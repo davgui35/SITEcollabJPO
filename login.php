@@ -1,6 +1,5 @@
 <?php 
-
-$bdd = new PDO ('mysql:host=localhost;dbname=SITEcollabJPO', 'root', '');
+include('includes/bootstrap.php');
 
 function exist($variable_test, $name, $bdd){
     $req = $bdd->prepare('SELECT * FROM membres WHERE ' . $name . ' = ?');
