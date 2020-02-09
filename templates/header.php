@@ -20,13 +20,10 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container lien-techno d-flex justify-content-center">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item active mt-4">
                             <a class="nav-link" href="index.php">Accueil</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pageAPP.php">A propos</a>
-                        </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown mt-4">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
                             Matières
                             </a>
@@ -40,15 +37,21 @@
                                 <a class="dropdown-item" href="pageIA.php">Illustrator</a>
                             </div>
                         </li>
+                        <li class="nav-item mt-4">
+                            <a class="nav-link" href="pageAPP.php">A propos</a>
+                        </li>
                         <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn my-2 my-sm-0" type="submit">Search</button>
+                            <input class="form-control mr-sm-2" type="search" placeholder="Rechercher..." aria-label="Search">
+                            <button class="btn my-2 my-sm-0" type="submit">Rechercher</button>
                         </form>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.php">Se connecter</a>
+                            <a class="nav-link" href="sign_in.php">S'inscrire</a>
+                        </li>
                     </ul>
                 </div> 
                 </div>
             </nav>
         </div>
-
     </header>
     <main>

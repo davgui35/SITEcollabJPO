@@ -1,7 +1,6 @@
 <?php
-// Demarage de la session utilisateur 
 session_start();
-
+// Demarage de la session utilisateur 
 
 // Constantes de base de mon programme
 define('DIR_ASSETS', 'assets/');
