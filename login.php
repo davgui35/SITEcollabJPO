@@ -48,4 +48,4 @@ if(isset($_POST['formconnexion'])){
         }
         ?>
     </div>
-    <?= include(DIR_TEMPLATES . 'footer.php'); ?>
+<?= include(DIR_TEMPLATES . 'footer.php'); ?>
