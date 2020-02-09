@@ -23,31 +23,32 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index.php">Accueil</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="pageHTML.php">HTML</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pageCSS.php">CSS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pageWP.php">WordPress</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pagePHP.php">PHP</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pagePS.php">PS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pageIA.php">AI</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pageAPP.php">A propos</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            Matières
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="pageHTML.php">HTML</a>
+                                <a class="dropdown-item" href="pageCSS.php">CSS</a>
+                                <a class="dropdown-item" href="pagePHP.php">PHP</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="pageWP.php">Wordpress</a>
+                                <a class="dropdown-item" href="pagePS.php">Photoshop</a>
+                                <a class="dropdown-item" href="pageIA.php">Illustrator</a>
+                            </div>
+                        </li>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn my-2 my-sm-0" type="submit">Search</button>
+                        </form>
                     </ul>
                 </div> 
                 </div>
             </nav>
         </div>
+
     </header>
     <main>

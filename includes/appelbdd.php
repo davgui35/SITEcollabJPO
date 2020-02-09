@@ -1,6 +1,6 @@
-<?php // Inclusion de la base de donnée au sité 
+<?php // Inclusion de la base de donnée au site
 try{
-    $bdd = new PDO ('mysql:host=localhost;dbname=homecodesign', 'root', '');
+	$bdd = new PDO('mysql:host=localhost;dbname=homecodesign;charset=utf8', 'root', '');
   }
 catch (Exception $e)
   {

@@ -110,4 +110,26 @@ function createCarousel($req)
 }
 
 
+/**
+ * Cette fonction permet de vérifier si un mail ou pseudo existe déjà dans la bdd
+ *
+ * @return 
+ */
+
+function exist($variable_test, $name, $bdd){
+  $req = $bdd->prepare('SELECT * FROM membres WHERE ' . $name . ' = ?');
+  $req->execute(array($variable_test));
+  $exist = $req->rowCount();
+
+  return $exist;
+}
+
+
+
+
+
+
+
+
+
 ?>

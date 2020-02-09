@@ -200,3 +200,7 @@ a, a:hover{
     color: black;
     text-decoration: none;
 }
+
+li{
+    margin-right: 50px;
+}

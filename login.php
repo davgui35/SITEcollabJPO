@@ -1,21 +1,14 @@
 <?php 
 include('includes/bootstrap.php');
 
-function exist($variable_test, $name, $bdd){
-    $req = $bdd->prepare('SELECT * FROM membres WHERE ' . $name . ' = ?');
-    $req->execute(array($variable_test));
-    $exist = $req->rowCount();
-
-    return $exist;
-}
-
-
 if(isset($_POST['forminscription'])){
     $pseudo = htmlspecialchars($_POST['pseudo']);
     $mail = htmlspecialchars($_POST['mail']);
     $mail2 = htmlspecialchars($_POST['mail2']);
-    $mdp = sha1($_POST['mdp']); // Hashage du mot de passe 
-    $mdp2 = sha1($_POST['mdp2']);
+    $mdp = htmlspecialchars($_POST['mdp']);
+    $mdp2 = htmlspecialchars($_POST['mdp2']);
+    //$mdp = sha1($_POST['mdp']); // Hashage du mot de passe 
+    //$mdp2 = sha1($_POST['mdp2']);
 
     if(!empty($_POST['pseudo']) AND !empty($_POST['mail']) AND !empty($_POST['mail2']) AND !empty($_POST['mdp']) AND !empty($_POST['mdp2'])){ //tester si ça marche avec $mdp, $mdp2...
         if(strlen($pseudo) <= 255){
@@ -25,8 +18,9 @@ if(isset($_POST['forminscription'])){
                         if(filter_var($mail, FILTER_VALIDATE_EMAIL)){ //test e-mail valide ou non ? 
                             if(exist($mail, 'mail', $bdd) == 0){
                                 if($mdp == $mdp2){
-                                    $insertmail = $bdd->prepare('INSERT INTO membres(pseudo, mail, mdp) VALUES(?, ?, ?)');
-                                    $insertmail->execute(array($pseudo, $mail, $mdp));
+                                    $mdp = password_hash($_POST['mdp'], PASSWORD_DEFAULT);  
+                                    $insert = $bdd->prepare('INSERT INTO membres(pseudo, mail, mdp, avatar) VALUES(?, ?, ?, ?)');
+                                    $insert->execute(array($pseudo, $mail, $mdp, ''));
                                     $erreur = 'Votre compte à bien été créer !';
                                 } else {
                                     $erreur = 'Vos mots de passe ne correspondent pas !';
@@ -59,15 +53,7 @@ if(isset($_POST['forminscription'])){
 
 
 
-<!DOCTYPE html>
-<html lang="fr  ">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=div">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>INSCRIPTION</title>
-</head>
-<body>
+<?= include(DIR_TEMPLATES . 'header.php'); ?>
     <div align="center">
         <h2>Inscription</h2>
         <br />
@@ -129,5 +115,4 @@ if(isset($_POST['forminscription'])){
         }
         ?>
     </div>
-</body>
-</html>
+    <?= include(DIR_TEMPLATES . 'footer.php'); ?>
