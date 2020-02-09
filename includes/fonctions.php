@@ -24,16 +24,14 @@ catch (Exception $e)
  *
  * @return void
  */
-function getArticle($id)
+function getArticle($id, $bdd)
 {
     // Le mot clé global permet d'accèder à la variable stockée dans datas/series.php
-    global $cards;
-
-
-    foreach ($cards as $key => $article) {
-        if ($article['id'] == $id) {
-            return $article;
-        }
+    $req = $bdd->query('SELECT * FROM articles WHERE id = ' . $id);
+    $article = $req->fetch();
+    $req->closeCursor(); 
+    if (!empty($article)) {
+      return $article;
     }
 
     // On retourne false dans le cas on trouve pas la serie
