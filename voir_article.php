@@ -6,9 +6,8 @@ include('includes/bootstrap.php');
 <?= include(DIR_TEMPLATES . 'header.php'); ?>
 
 <?php
-if (empty($_GET['id']) || !$article = getArticle($_GET['id'], $bdd)) {
-    // On redirige vers la page series.php avec une erreur
-    // Header('Location: series.php?alert=' . urlencode('Série introuvable !') . '&type=danger');
+if (empty($_GET['id']) || !$article = getArticle($_GET['id'], $bdd)) { //test si l'artcile demander existe bien dans la base 
+    // On redirige vers la page index.php
     return Header('Location: index.php');
 }
 
@@ -25,18 +24,6 @@ if (empty($_GET['id']) || !$article = getArticle($_GET['id'], $bdd)) {
         <blockquote><?= $article['description']; ?></blockquote>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

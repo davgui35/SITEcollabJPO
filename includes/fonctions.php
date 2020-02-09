@@ -1,32 +1,27 @@
 <?php
-
-function debug($data)
+/**
+ * Cette fonction permet de debuger une variable de type tableau 
+ *
+ * @return void
+ */
+function dd($data)
 {
 	echo '<pre>';
 	print_r($data);
     echo '</pre>';
 }
 
-function appelbdd(){
-try{
-    $bdd = new PDO ('mysql:host=localhost;dbname=homecodesign', 'root', '');
-  }
-catch (Exception $e)
-  {
-    die('Erreur : ' . $e ->getMessage());
-  }
-  return $bdd;
-  
-}
+
+
+
 /**
  * Cette fonction permet de récupérer un seul article
  * grâce à son identifiant
  *
  * @return void
  */
-function getArticle($id, $bdd)
+function getArticle($id, $bdd) 
 {
-    // Le mot clé global permet d'accèder à la variable stockée dans datas/series.php
     $req = $bdd->query('SELECT * FROM articles WHERE id = ' . $id);
     $article = $req->fetch();
     $req->closeCursor(); 
@@ -38,7 +33,12 @@ function getArticle($id, $bdd)
     return false;
 }
 
-
+/**
+ * Cette fonction permet de créer les cartes des article sur chaque page avec un domaine spécifique 
+ * grâce à son identifiant
+ *
+ * @return 
+ */
 function createCards($req)
 {
   $html = '';
@@ -74,7 +74,12 @@ function createCards($req)
 
 }
 
-
+/**
+ * Cette fonction permet de créer un carousel sur la chaque page de domaine différent 
+ * pour voir les trois articles du moment 
+ *
+ * @return 
+ */
 
 function createCarousel($req)
 {

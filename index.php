@@ -1,26 +1,16 @@
 
 <?php
-include('includes/bootstrap.php');
-
-  try{
-      $bdd = new PDO ('mysql:host=localhost;dbname=homecodesign', 'root', '');
-    }
-  catch (Exception $e)
-    {
-      die('Erreur : ' . $e ->getMessage());
-    }
-
-  
+include('includes/bootstrap.php');  
 ?>
 <!DOCTYPE html>
 <?= include(DIR_TEMPLATES . 'header.php'); ?>
 <?php
-$req = $bdd->query('SELECT * FROM cartes');
+$req = $bdd->query('SELECT * FROM cartes'); // on selectionne toutes les cartes de présentaion de chaque domaine dans la base de données (inclus dans bootstrap.php)
 ?>
 
 <div class="container" id="menu">
   <div class="row">
-    <?php while($carte = $req->fetch()) { ?>
+    <?php while($carte = $req->fetch()) { ?> <!--On boucle sur le nombre de domaine présents pour afficher toutes les cartes de présentation -->
                 <div class="col-sm">
                   <div class="card <?= $carte['type']?>" style="width: 19rem;">
                     <a href="page<?= $carte['type']?>.php">
@@ -44,3 +34,4 @@ $req = $bdd->query('SELECT * FROM cartes');
 <!-- footer -->
 <?= include(DIR_TEMPLATES . 'footer.php'); ?>
 
+<!--Penser à ajouter les messages d'erreur lors de la redirection d'une page vers la page précédane ou le menu -->
