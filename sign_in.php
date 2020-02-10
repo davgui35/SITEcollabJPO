@@ -18,7 +18,7 @@ if(isset($_POST['forminscription'])){
                         if(filter_var($mail, FILTER_VALIDATE_EMAIL)){ //test e-mail valide ou non ? 
                             if(exist($mail, 'mail', $bdd) == 0){
                                 if($mdp == $mdp2){
-                                    $mdp = password_hash($_POST['mdp'], PASSWORD_DEFAULT);  
+                                    $mdp = sha1($_POST['mdp']);
                                     $insert = $bdd->prepare('INSERT INTO membres(pseudo, mail, mdp, avatar) VALUES(?, ?, ?, ?)');
                                     $insert->execute(array($pseudo, $mail, $mdp, ''));
                                     $erreur = 'Votre compte à bien été créer !';
